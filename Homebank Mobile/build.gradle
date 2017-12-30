@@ -1,0 +1,62 @@
+apply plugin: 'android'
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://repository-achartengine.forge.cloudbees.com/snapshot/"
+    }
+}
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "19.1.0"
+
+    defaultConfig {
+        minSdkVersion 13
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+//    compile 'com.google.android.gms:play-services:5.+'
+    compile 'com.google.android.gms:play-services:6.1.11'
+    compile 'com.android.support:support-v13:21.0.0'
+    compile 'com.android.support:support-v4:21.0.0'
+    compile 'com.android.support:appcompat-v7:21.0.0'
+    compile files('libs/dropbox-sync-sdk-android.jar')
+    compile files("$buildDir/native-libs/native-libs.jar")
+
+   compile('com.google.api-client:google-api-client-xml:1.17.0-rc') {
+        exclude group: 'com.google.android.google-play-services'
+    }
+    compile 'com.google.http-client:google-http-client-gson:1.17.0-rc'
+    compile('com.google.api-client:google-api-client-android:1.17.0-rc') {
+        exclude group: 'com.google.android.google-play-services'
+    }
+//    compile 'com.google.apis:google-api-services-drive:v2-rev150-1.19.0'
+    compile 'com.google.apis:google-api-services-drive:v2-rev111-1.17.0-rc'
+
+    compile group: 'org.achartengine', name: 'achartengine', version: '1.2.0'
+
+    compile 'net.rdrei.android.dirchooser:library:2.1@aar'
+}
+
+task nativeLibsToJar(type: Zip) {
+    destinationDir file("$buildDir/native-libs")
+    baseName 'native-libs'
+    extension 'jar'
+    from fileTree(dir: 'libs', include: '**/*.so')
+    into 'lib/'
+}
+
+tasks.withType(JavaCompile) {
+    compileTask -> compileTask.dependsOn(nativeLibsToJar)
+}

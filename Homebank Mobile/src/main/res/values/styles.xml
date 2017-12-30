@@ -1,0 +1,10 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:textColorSecondary">#ff000000</item>
+    </style>
+
+    <style name="FileChooser" parent="android:Theme.Holo.Light.Dialog" />
+
+</resources>

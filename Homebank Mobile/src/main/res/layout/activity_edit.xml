@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:orientation="vertical"
+        android:scrollbars="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date" />
+
+        <Button
+            android:id="@+id/date_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onDateButtonClick" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/payee" />
+
+        <!-- <LinearLayout -->
+        <!-- android:layout_width="0px" -->
+        <!-- android:layout_height="0px" -->
+        <!-- android:focusable="true" -->
+        <!-- android:focusableInTouchMode="true" /> -->
+
+        <AutoCompleteTextView
+            android:id="@+id/payee_autocomplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:completionThreshold="1"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/amount" />
+
+        <EditText
+            android:id="@+id/amount_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="1234567890.-"
+            android:gravity="right"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/categories" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/category_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="bottom|right"
+                android:orientation="vertical" >
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/remove_category"
+                    android:onClick="onRemoveCategoryButtonClick" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_category"
+                    android:onClick="onAddCategoryButtonClick" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- <TextView -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:text="@string/parent_category" /> -->
+
+
+        <!-- <AutoCompleteTextView -->
+        <!-- android:id="@+id/parent_category_autocomplete" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:completionThreshold="1" -->
+        <!-- android:imeOptions="actionNext" -->
+        <!-- android:inputType="textCapWords" -->
+        <!-- android:textColor="#000000" /> -->
+
+
+        <!-- <TextView -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:text="@string/category" /> -->
+
+
+        <!-- <AutoCompleteTextView -->
+        <!-- android:id="@+id/category_autocomplete" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:completionThreshold="1" -->
+        <!-- android:imeOptions="actionNext" -->
+        <!-- android:inputType="textCapWords" -->
+        <!-- android:textColor="#000000" /> -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text" />
+
+        <AutoCompleteTextView
+            android:id="@+id/text_autocomplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:completionThreshold="1"
+            android:imeOptions="actionDone"
+            android:inputType="textCapWords"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/button_confirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:onClick="onConfirmButtonClick"
+                android:text="@string/confirm" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/button_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:onClick="onCancelButtonClick"
+                android:text="@string/cancel" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:key="pref_syncConnectionSettings_dropbox"
+        android:title="@string/pref_syncConnectionTypes_dropbox">
+        <Preference
+            android:key="pref_dropbox_user"
+            android:title="@string/pref_sign_in"/>
+        <Preference
+            android:key="pref_dropbox_file"
+            android:title="@string/pref_dropbox_file"/>
+    </PreferenceCategory>
+</PreferenceScreen>

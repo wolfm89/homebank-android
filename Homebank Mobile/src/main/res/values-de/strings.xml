@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Homebank Mobile</string>
+    <string name="title_section1">Ausgaben</string>
+    <string name="title_section2">Diagramme</string>
+    <string name="navigation_drawer_open">Navigationleiste öffnen</string>
+    <string name="navigation_drawer_close">Navigationleiste schließen</string>
+    <string name="action_example">Beispielaktion</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="pref_syncConnectionType">Speichermethode</string>
+    <string name="pref_syncConnectionTypes_local">Lokal</string>
+    <string name="pref_syncConnectionTypes_dropbox">Dropbox</string>
+    <string name="pref_syncConnectionTypes_gdrive">Google Drive</string>
+    <string name="pref_local_file">Lokale Datei</string>
+    <string name="pref_dropbox_file">Dropbox Datei</string>
+    <string name="pref_gdrive_file">Google Drive Datei</string>
+    <string name="pref_sign_in">Anmelden</string>
+    <string name="pref_sign_out">Abmelden</string>
+    <string name="title_activity_file_chooser">Datei wählen…</string>
+    <string name="new_file">Neue Datei…</string>
+    <string name="new_file_msg">Name der neuen Datei (z.B. "ausgaben.xhb"):</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Abbrechen</string>
+
+    <string name="acc_spinner_prompt">Konto wählen…</string>
+    <string name="acc_text_view">Konto:</string>
+    <string name="date_from_text_view">von</string>
+    <string name="date_to_text_view">bis</string>
+    <string name="date">Datum</string>
+    <string name="payee">Empfänger</string>
+    <string name="text">Buchungstext</string>
+    <string name="amount">Betrag</string>
+    <string name="category">Kategorie</string>
+    <string name="remove_category">Kategorie entfernen</string>
+    <string name="add_category">Kategorie hinzufügen</string>
+    <string name="categories">Kategorien</string>
+    <string name="title_activity_edit">Bearbeiten</string>
+    <string name="parent_category">Übergeordnete Kategorie</string>
+    <string name="confirm">Bestätigen</string>
+
+    <string name="error">Fehler</string>
+    <string name="error_retrieving_files">Fehler beim Empfangen der Dateien</string>
+    <string name="download_file">Datei wird heruntergeladen…</string>
+    <string name="update_database">Datenbank wird aktualisiert…</string>
+    <string name="dropbox_unlinked">Dropbox verbunden</string>
+    <string name="dropbox_linked">Dropbox getrennt</string>
+    <string name="dropbox_linking_cancelled">Verbindung zu Dropbox abgebrochen</string>
+    <string name="gdrive_unlinked">Google Drive getrennt</string>
+    <string name="gdrive_linked">Google Drive verbunden</string>
+    <string name="downloaded_file">Datei erfolgreich heruntergeladen</string>
+    <string name="created_file">Datei erstellt</string>
+    <string name="created_folder">Verzeichnis erstellt</string>
+    <string name="error_creating_file">Fehler beim Erstellen der Datei</string>
+    <string name="error_creating_folder">Fehler beim Erstellen des Verzeichnisses</string>
+    <string name="upload_file">Datei wird hochgeladen…</string>
+    <string name="uploaded_file">Datei erfolgreich hochgeladen</string>
+    <string name="sign_in_required">Anmeldung erforderlich</string>
+    <string name="no_files_found">Keine Dateien gefunden</string>
+
+    <string name="error_processing_file">Fehler beim Verarbeiten der Datei</string>
+    <string name="error_read_write_file">Fehler beim Lesen/Schreiben der Datei</string>
+
+    <string name="retry">Wiederholen</string>
+    <string name="add">Hinzufügen</string>
+    <string name="update">Aktualisieren</string>
+    <string name="commit">Bestätigen</string>
+    <string name="delete_msg">Diese Transaktion löschen?</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nein</string>
+    <string name="done">Fertig</string>
+    <string name="total">Kontostand:</string>
+    <string name="log_in_text">Richten Sie eine Speichermethode in den Einstellungen ein</string>
+    <string name="others">Andere</string>
+    <string name="expenses_by_category">Ausgaben per Kategorie</string>
+
+    <string name="new_dir_name">ausgaben</string>
+
+    <string name="action_favorite">Vorlage</string>
+    <string name="choose_template">Vorlage auswählen…</string>
+
+</resources>

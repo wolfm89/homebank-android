@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:key="pref_syncConnectionSettings_local"
+        android:title="@string/pref_syncConnectionTypes_local">
+        <Preference
+            android:key="pref_local_file"
+            android:title="@string/pref_local_file" />
+    </PreferenceCategory>
+</PreferenceScreen>

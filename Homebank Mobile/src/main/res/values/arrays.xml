@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_syncConnectionTypes_entries">
+        <item>@string/pref_syncConnectionTypes_local</item>
+        <item>@string/pref_syncConnectionTypes_dropbox</item>
+        <item>@string/pref_syncConnectionTypes_gdrive</item>
+    </string-array>
+    <string-array name="pref_syncConnectionTypes_values">
+        <item>@string/pref_syncConnectionTypes_local_val</item>
+        <item>@string/pref_syncConnectionTypes_dropbox_val</item>
+        <item>@string/pref_syncConnectionTypes_gdrive_val</item>
+    </string-array>
+</resources>
